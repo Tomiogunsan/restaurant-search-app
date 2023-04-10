@@ -11,7 +11,7 @@ const SearchScreen = () => {
     const filterResultsByPrice = (price) => {
         // price === '$' || '$$ || '$$$'
         return results.filter(result => {
-            return result.price === price;
+            return
         })
     };
 
@@ -22,9 +22,9 @@ const SearchScreen = () => {
         />
         {error ? <Text>{error}</Text> : null}
         <Text>We have found {results.length} result</Text>
-        <ResultsList results={filterResultsByPrice('$')} title='Cost Effective'/>
-        <ResultsList  results={filterResultsByPrice('$$')} title='Bit Pricier'/>
-        <ResultsList results={filterResultsByPrice('$$$')} title='Big Spender'/>
+        <ResultsList title='Cost Effective'/>
+        <ResultsList  title='Bit Pricier'/>
+        <ResultsList title='Big Spender'/>
     </View>
 }
 

@@ -7,10 +7,7 @@ const ResultsList = ({title, results }) => {
        <FlatList
        horizontal={true}
        data={results}
-       keyExtractor={(result) => result.id}
-       renderItem={({item}) => {
-        return <Text>{item.name}</Text>
-       }}
+       keyExtractor={(result) =}
        />
     </View>
 }
