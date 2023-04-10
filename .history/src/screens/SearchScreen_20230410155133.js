@@ -1,16 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {View, Text, StyleSheet} from 'react-native';
 import SearchBar from '../components/SearchBar';
-import ResultsList from '../components/ResultsList';
+import Re
 import useResults from '../hooks/useResults';
 
 const SearchScreen = () => {
     const [term, setTerm] = useState('');
     const [searchApi, results, error] = useResults()
     
-    const filterResultsByPrice = (price) => {
-
-    };
 
     return <View>
         <SearchBar term={term} 
@@ -19,9 +16,6 @@ const SearchScreen = () => {
         />
         {error ? <Text>{error}</Text> : null}
         <Text>We have found {results.length} result</Text>
-        <ResultsList title='Cost Effective'/>
-        <ResultsList  title='Bit Pricier'/>
-        <ResultsList title='Big Spender'/>
     </View>
 }
 

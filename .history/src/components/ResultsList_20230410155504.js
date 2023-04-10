@@ -3,15 +3,10 @@ import {View, Text, StyleSheet} from 'react-native'
 
 const ResultsList = ({title}) => {
     return <View>
-        <Text style={styles.title}>{title}</Text>
+        <Text>{t}</Text>
     </View>
 }
 
-const styles = StyleSheet.create({
-    title: {
-        fontSize: 18,
-        fontWeight: 'bold'
-    }
-});
+const styles = StyleSheet.create({});
 
 export default ResultsList;

@@ -9,8 +9,8 @@ const SearchScreen = () => {
     const [searchApi, results, error] = useResults()
     
     const filterResultsByPrice = (price) => {
-
-    };
+        
+    }
 
     return <View>
         <SearchBar term={term} 

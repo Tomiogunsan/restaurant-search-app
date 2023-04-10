@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native'
 
 const ResultsList = ({title}) => {
     return <View>
-        <Text style={styles.title}>{title}</Text>
+        <Text style={}>{title}</Text>
     </View>
 }
 
