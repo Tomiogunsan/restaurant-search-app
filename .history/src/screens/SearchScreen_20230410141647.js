@@ -29,7 +29,7 @@ const SearchScreen = () => {
         onTermChange={(newTerm)=> setTerm(newTerm) } 
         onTermSubmit ={() => searchApi()}
         />
-        {error ? <Text>{error}</Text> : null}
+        {<Text>{error}</Text>}
         <Text>We have found {results.length} result</Text>
     </View>
 }
