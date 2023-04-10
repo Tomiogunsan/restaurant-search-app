@@ -10,7 +10,7 @@ const ResultsList = ({title, results }) => {
        data={results}
        keyExtractor={(result) => result.id}
        renderItem={({item}) => {
-        return <ResultsDetail result={item} />
+        return <ResultsDetail result />
        }}
        />
     </View>
