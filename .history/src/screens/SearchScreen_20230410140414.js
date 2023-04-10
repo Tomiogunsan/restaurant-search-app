@@ -6,7 +6,6 @@ import yelp from  '../api/yelp';
 const SearchScreen = () => {
     const [term, setTerm] = useState('');
     const [results, setResults] = useState([]);
-    const [error, setError] = useState('');
 
     const searchApi = async () => {
        try{
@@ -19,7 +18,7 @@ const SearchScreen = () => {
            });
            setResults(res.data.businesses)
         } catch (err){
-            setError('Something went wrong');
+            console
         }
        }
       

@@ -19,7 +19,7 @@ const SearchScreen = () => {
            });
            setResults(res.data.businesses)
         } catch (err){
-            setError('Something went wrong');
+            setError('err')
         }
        }
       
