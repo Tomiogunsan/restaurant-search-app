@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {View, Text, StyleSheet} from 'react-native';
 import SearchBar from '../components/SearchBar';
 import yelp from  '../api/yelp';
@@ -23,14 +23,11 @@ const SearchScreen = () => {
         }
        }
       
-       useEffect(()=> {
-        searchApi('pasta')
-       }, []);
 
     return <View>
         <SearchBar term={term} 
         onTermChange={(newTerm)=> setTerm(newTerm) } 
-        onTermSubmit ={() => searchApi(term)}
+        onTermSubmit ={() => searchApi()}
         />
         {error ? <Text>{error}</Text> : null}
         <Text>We have found {results.length} result</Text>

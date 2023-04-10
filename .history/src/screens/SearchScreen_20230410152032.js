@@ -23,9 +23,7 @@ const SearchScreen = () => {
         }
        }
       
-       useEffect(()=> {
-        searchApi('pasta')
-       }, []);
+       useEffect(()=> )
 
     return <View>
         <SearchBar term={term} 

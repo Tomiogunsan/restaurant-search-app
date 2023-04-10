@@ -24,7 +24,7 @@ const SearchScreen = () => {
        }
       
        useEffect(()=> {
-        searchApi('pasta')
+        searchApi()
        }, []);
 
     return <View>
