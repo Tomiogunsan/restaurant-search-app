@@ -15,7 +15,7 @@ const SearchScreen = () => {
         })
     };
 
-    return <View style={{flex: 1}}>
+    return <View style={{border}}>
         <SearchBar term={term} 
         onTermChange={(newTerm)=> setTerm(newTerm) } 
         onTermSubmit ={() => searchApi(term)}

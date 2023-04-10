@@ -15,7 +15,7 @@ const SearchScreen = () => {
         })
     };
 
-    return <View style={{flex: 1}}>
+    return <View >
         <SearchBar term={term} 
         onTermChange={(newTerm)=> setTerm(newTerm) } 
         onTermSubmit ={() => searchApi(term)}
@@ -26,7 +26,7 @@ const SearchScreen = () => {
         <ResultsList results={filterResultsByPrice('$')} title='Cost Effective'/>
         <ResultsList  results={filterResultsByPrice('$$')} title='Bit Pricier'/>
         <ResultsList results={filterResultsByPrice('$$$')} title='Big Spender'/>
-        </ScrollView>
+    
     </View>
 }
 
