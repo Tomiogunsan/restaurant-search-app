@@ -11,10 +11,7 @@ const ResultsShowScreen = ({navigation}) => {
       setResult(response.data) ;
    };
 
-   useEffect(() => {
-    getResult(id)
-   }, [])
-   
+   use
 
     return <View>
         <Text>Results show</Text>

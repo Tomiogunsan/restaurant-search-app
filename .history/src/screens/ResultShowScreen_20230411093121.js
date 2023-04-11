@@ -13,6 +13,8 @@ const ResultsShowScreen = ({navigation}) => {
 
    useEffect(() => {
     getResult(id)
+   
+     
    }, [])
    
 
