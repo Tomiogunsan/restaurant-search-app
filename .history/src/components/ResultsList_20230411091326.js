@@ -34,4 +34,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default withNavigation(ResultsList);
+export default wiResultsList;

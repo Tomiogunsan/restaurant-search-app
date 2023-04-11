@@ -26,7 +26,7 @@ const SearchScreen = () => {
         <ResultsList 
         results={filterResultsByPrice('$')} 
         title='Cost Effective'
-        
+        navigation={navigation}
         />
         <ResultsList  
         results={filterResultsByPrice('$$')} 
